@@ -238,7 +238,7 @@ def inject():
             sha = None
         
         # Add payload
-        timestamp = datetime.now().strftime('%Y-%m-%d %I:%M:%S')
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         new_content = content + f"\n[{timestamp}] {payload}"
         
         # Commit
